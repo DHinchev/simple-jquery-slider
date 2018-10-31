@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="Content-type">
+    <meta charset="content=text/html">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <title>Image Sliders</title>
+    <link rel="stylesheet" type="text/css" href="styles/css/index.min.css">
+</head>
+
+<body>
+    <div class="slide-menu">
+        <svg class="menu-icon" width="40px" height="40px" enable-background="new 0 0 512 512" version="1.1" viewBox="0 0 512 512"
+            xmlns="http://www.w3.org/2000/svg">
+            <path d="m491.32 235.32h-470.64c-11.422 0-20.682 9.259-20.682 20.682s9.26 20.682 20.682 20.682h470.64c11.423 0 20.682-9.259 20.682-20.682 0-11.422-9.259-20.682-20.682-20.682z" />
+            <path d="m491.32 78.439h-470.64c-11.422 0-20.682 9.26-20.682 20.682s9.26 20.682 20.682 20.682h470.64c11.423 0 20.682-9.26 20.682-20.682s-9.259-20.682-20.682-20.682z" />
+            <path d="m491.32 392.2h-470.64c-11.422 0-20.682 9.259-20.682 20.682s9.26 20.682 20.682 20.682h470.64c11.423 0 20.682-9.259 20.682-20.682s-9.259-20.682-20.682-20.682z" />
+        </svg>
+        </label>
+        <nav class="menu">
+            <ul>
+                <li><a href="#classic">Classic slider</a></li>
+                <li><a href="#magazine">Magazine Slider</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div class="classic" data-slider-container="true">
+        <a href="#" name="classic"></a>
+        <div class="slider" data-slider-speed="5000" data-slider-duration="2000" data-slider-mobile-duration="500"
+            data-slider="true">
+            <img src="assets/images/1.jpg" class="slider-img" alt="Mountain Nature">
+            <img src="assets/images/2.jpg" class="slider-img" alt="Autumn Nature">
+            <img src="assets/images/3.jpg" class="slider-img" alt="Mountain sunset">
+            <img src="assets/images/4.jpg" class="slider-img" alt="River ">
+            <img src="assets/images/5.jpg" class="slider-img" alt="Fields with hills">
+            <img src="assets/images/6.jpg" class="slider-img" alt="Forest Sunset">
+        </div>
+        <svg class="prev" data-slider-prev="prev" enable-background="new 0 0 478.448 478.448" version="1.1" viewBox="0 0 478.448 478.448"
+            height="100px">
+            <polygon points="131.66 0 100.49 32.035 313.8 239.23 100.49 446.37 131.65 478.45 377.95 239.23" fill="#010002" />
+        </svg>
+        <svg class="next" data-slider-next="next" enable-background="new 0 0 478.448 478.448" version="1.1" viewBox="0 0 478.448 478.448"
+            height="100px">
+            <polygon points="131.66 0 100.49 32.035 313.8 239.23 100.49 446.37 131.65 478.45 377.95 239.23" fill="#010002" />
+        </svg>
+    </div>
+    <div class="magazine">
+        <a href="#" name="magazine"></a>
+        <div class="slideMagazine">
+            <ul class="slideMagazineContainer">
+                <li><img src="assets/images/1.jpg" class="firstMagazineImg magazineImg" alt="Mountain Nature"></li>
+                <li><img src="assets/images/2.jpg" class="secondMagazineImg magazineImg" alt="Autumn Nature"></li>
+                <li><img src="assets/images/3.jpg" class="thirdMagazineImg magazineImg" alt="Mountain sunset"></li>
+                <li><img src="assets/images/4.jpg" class="fourthMagazineImg magazineImg" alt="River"></li>
+                <li><img src="assets/images/5.jpg" class="fifthMagazineImg magazineImg" alt="Fields with hills"></li>
+                <li><img src="assets/images/6.jpg" class="sixthMagazineImg magazineImg" alt="Forest Sunset"></li>
+            </ul>
+        </div>
+    </div>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="scripts/index.min.js"></script>
+    <script>
+        Slider.init();
+    </script>
+</body>
+
+</html>
